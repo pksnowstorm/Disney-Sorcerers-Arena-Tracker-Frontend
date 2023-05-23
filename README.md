@@ -9,3 +9,17 @@ Hello fellow sorcerers. Are you tired of having to browse through a bunch of dif
 Technologies Used:
 
 CSS, Express, Javascript, Mongo, Mongoose, Netlify, Node, React, Render and SCSS
+
+Getting Started:
+
+https://trello.com/b/dE3ML3VQ/disney-sorcerers-arena-tracker
+
+https://leafy-pasca-6f8a76.netlify.app/
+
+Unsolved Problems:
+
+Getting access to my character and event data from mongoose and the ability to edit and delete items
+
+Future Enhancements:
+
+Adding in characters and events
