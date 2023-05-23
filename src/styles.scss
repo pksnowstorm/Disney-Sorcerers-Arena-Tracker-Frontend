@@ -1,10 +1,10 @@
 // --------------------------
 // VARIABLES
 // --------------------------
-$maincolor: black;
-$contrastcolor: white;
+$maincolor: rgb(164, 59, 245);
+$contrastcolor: rgb(255, 196, 4);
 
-@mixin white-text-black-bg {
+@mixin gold-text-blue-bg {
   color: $contrastcolor;
   background-color: $maincolor;
 }
@@ -19,12 +19,12 @@ $contrastcolor: white;
 // --------------------------
 
 .nav {
-  @include white-text-black-bg;
+  @include gold-text-blue-bg;
   display: flex;
   justify-content: center;
 
   a {
-    @include white-text-black-bg;
+    @include gold-text-blue-bg;
     text-decoration: none;
     div {
       margin: 10px;
@@ -41,7 +41,7 @@ $contrastcolor: white;
 div {
   form {
     input {
-      @include white-text-black-bg;
+      @include gold-text-blue-bg;
       padding: 10px;
       font-size: 1.1em;
       margin: 10px;
@@ -58,14 +58,9 @@ div {
 // --------------------------
 
 button#delete {
-  @include white-text-black-bg;
+  @include gold-text-blue-bg;
   display: block;
   margin: auto;
   font-size: 1.3em;
   padding: 10px;
-}
-
-.footer{
-    position: absolute;
-    bottom: 0;
 }

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  background-color: rgb(164, 59, 245);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: rgb(255, 196, 4);
+  font-size: 15px;
+ }
