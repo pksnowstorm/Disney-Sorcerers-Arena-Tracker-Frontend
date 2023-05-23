@@ -15,7 +15,7 @@ const Header = (props) => {
         <Link to="/character">
           <div>Characters</div>
         </Link>
-        <Link to="/spell">
+        <Link to="/spells">
           <div>Spells</div>
         </Link>
         <Link to="/club">
