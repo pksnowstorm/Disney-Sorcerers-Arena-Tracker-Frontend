@@ -63,22 +63,22 @@ const ClubIndex = (props) => {
             <input
               type="text"
               value={newForm.clubExpedition}
-              name="clubExpeditionTier"
-              placeholder="clubExpeditionTier"
+              name="clubExpedition"
+              placeholder="clubExpedition"
               onChange={handleChange}
             />
             <input
               type="text"
               value={newForm.forbiddenDepths}
-              name="forbiddenDepthsRaidTier"
-              placeholder="forbiddenDepthsRaidTier"
+              name="forbiddenDepths"
+              placeholder="forbiddenDepths"
               onChange={handleChange}
             />
             <input
               type="text"
               value={newForm.siegeOfOlympus}
-              name="siegeOfOlympusTier"
-              placeholder="siegeOfOlympusTier"
+              name="siegeOfOlympus"
+              placeholder="siegeOfOlympus"
               onChange={handleChange}
             />
              <input

@@ -81,22 +81,22 @@ const ClubShow = (props) => {
         <input
           type="text"
           value={editForm.clubExpedition}
-          name="clubExpeditionTier"
-          placeholder="clubExpeditionTier"
+          name="clubExpedition"
+          placeholder="clubExpedition"
           onChange={handleChange}
         />
         <input
               type="text"
               value={editForm.forbiddenDepths}
-              name="forbiddenDepthsRaidTier"
-              placeholder="forbiddenDepthsRaidTier"
+              name="forbiddenDepths"
+              placeholder="forbiddenDepths"
               onChange={handleChange}
             />
             <input
               type="text"
               value={editForm.siegeOfOlympus}
-              name="siegeOfOlympusTier"
-              placeholder="siegeOfOlympusTier"
+              name="siegeOfOlympus"
+              placeholder="siegeOfOlympus"
               onChange={handleChange}
             />
              <input
