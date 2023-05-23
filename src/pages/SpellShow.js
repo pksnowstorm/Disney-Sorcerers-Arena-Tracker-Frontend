@@ -8,7 +8,7 @@ const SpellShow = (props) => {
   const spells = props.spells
   const spell = spells ? spells.find((s) => s._id === id ) : null
 
-  const [ editForm, setEditForm ] = useState(spells)
+  const [ editForm, setEditForm ] = useState(spell)
   const [ isEditing, setIsEditing ] = useState(false)
 
   useEffect( () => {

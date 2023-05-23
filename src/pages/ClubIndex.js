@@ -10,7 +10,7 @@ const ClubIndex = (props) => {
         forbiddenDepths: "",
         siegeOfOlympus: "",
         alliance: "",
-        contactInfo: ""
+        contactInfo: "",
       });
     
       const handleChange = (event) => {

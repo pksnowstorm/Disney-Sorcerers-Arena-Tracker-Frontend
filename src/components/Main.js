@@ -49,7 +49,7 @@ const Main = (props) => {
         getNews();
       }
 
-    useEffect(() => getNews(), []);
+    useEffect(() => getNews, []);
 
     const [spells, setSpells] = useState(null)
     const URL2 = "https://disney-socerers-arena-tracker.onrender.com/spells"
@@ -89,7 +89,7 @@ const Main = (props) => {
         getSpells();
       }
 
-    useEffect(() => getSpells(), []);
+    useEffect(() => getSpells, []);
 
     const [clubs, setClubs] = useState(null)
     const URL3 = "https://disney-socerers-arena-tracker.onrender.com/club"
@@ -129,7 +129,7 @@ const Main = (props) => {
         getClubs();
       }
 
-    useEffect(() => getClubs(), []);
+    useEffect(() => getClubs, []);
 
   return (
       <Routes>

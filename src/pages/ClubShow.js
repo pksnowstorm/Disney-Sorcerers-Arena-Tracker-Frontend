@@ -8,7 +8,7 @@ const ClubShow = (props) => {
   const clubs = props.clubs
   const club = clubs ? clubs.find((c) => c._id === id ) : null
 
-  const [ editForm, setEditForm ] = useState(clubs)
+  const [ editForm, setEditForm ] = useState(club)
   const [ isEditing, setIsEditing ] = useState(false)
 
   useEffect( () => {
@@ -36,7 +36,7 @@ const ClubShow = (props) => {
 
   const handleDelete = () => {
     props.deleteClubs(club._id);
-    navigate('/');
+    navigate('/club');
   }
 
   const loaded = () => {
