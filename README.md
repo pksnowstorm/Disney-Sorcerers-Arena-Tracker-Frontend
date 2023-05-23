@@ -22,4 +22,4 @@ Getting access to my character and event data from mongoose and the ability to e
 
 Future Enhancements:
 
-Adding in characters and events
+Adding in characters, events, and add in images
