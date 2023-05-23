@@ -6,7 +6,8 @@ import NewsIndex from "../pages/NewsIndex";
 import NewsShow from "../pages/NewsShow";
 import SpellIndex from "../pages/SpellIndex";
 import SpellShow from "../pages/SpellShow";
-
+import ClubIndex from "../pages/ClubIndex";
+import ClubShow from "../pages/ClubShow";
 
 const Main = (props) => {
     const [news, setNews] = useState(null)
@@ -90,6 +91,46 @@ const Main = (props) => {
 
     useEffect(() => getSpells, []);
 
+    const [clubs, setClubs] = useState(null)
+    const URL3 = "https://disney-socerers-arena-tracker.onrender.com/club"
+    const getClubs = async () => {
+        const response3 = await fetch(URL3);
+        const data3 = await response3.json();
+        setClubs(data3);
+    }
+    const createClubs = async(club) => {
+        await fetch(URL3, {
+            method: "POST",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringify(club),
+        });
+        getClubs();
+    };
+
+    const updateClubs = async (club, id) => {
+        // make put request to create people
+        await fetch(URL3 + id, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "Application/json",
+          },
+          body: JSON.stringify(club),
+        });
+        getClubs();
+      }
+    
+      const deleteClubs = async id => {
+        // make delete request to create people
+        await fetch(URL3 + id, {
+          method: "DELETE",
+        })
+        getClubs();
+      }
+
+    useEffect(() => getClubs, []);
+
   return (
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -98,6 +139,8 @@ const Main = (props) => {
         <Route path="/news/:id" element={<NewsShow news={news} updateNews={updateNews} deleteNews={deleteNews} />} />
         <Route path="/spells" element={<SpellIndex spells={spells} createSpells={createSpells} />} />
         <Route path="/spells/:id" element={<SpellShow spells={spells} updateSpells={updateSpells} deleteSpells={deleteSpells} />} />
+        <Route path="/club" element={<ClubIndex clubs={clubs} createClubs={createClubs} />} />
+        <Route path="/club/:id" element={<ClubShow clubs={clubs} updateClubs={updateClubs} deleteClubs={deleteClubs} />} />
     </Routes>
   );
 }
